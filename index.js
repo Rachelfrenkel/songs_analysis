@@ -198,13 +198,13 @@ function reset() {
     }
 
 
-    // if ($(".sex p").text() == "Female") {
-    //     $('.Female').removeClass('hover');
-    //     $(".sex p").removeClass("Female");
-    //     $(".sex p").addClass("Male");
-    //     $(".sex p").text("Male");
-    //     $('.Male').addClass('hover');
-    // }    
+    if ($(".sex p").text() == "Female") {
+        $('.Female').removeClass('hover');
+        $(".sex p").removeClass("Female");
+        $(".sex p").addClass("Male");
+        $(".sex p").text("Male");
+        $('.Male').addClass('hover');
+    }    
 
 
     $('.hover').removeClass('hover');
