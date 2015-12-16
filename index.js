@@ -197,6 +197,7 @@ function reset() {
         $(".genre .dropdown-box p:contains('Rock')").text(switchText);
     }
 
+
     // if ($(".sex p").text() == "Female") {
     //     $('.Female').removeClass('hover');
     //     $(".sex p").removeClass("Female");
@@ -204,6 +205,7 @@ function reset() {
     //     $(".sex p").text("Male");
     //     $('.Male').addClass('hover');
     // }    
+
 
     $('.hover').removeClass('hover');
     $('.clicked-category').removeClass('clicked-category');
