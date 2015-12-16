@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>How To Make a Hit Song</title>
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="songs.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="slider/css/bootstrap-slider.css">
+    <script src="jquery.js"></script>
+    <script src="jquery.csv-0.71.js"></script>
+    <script src="slider/bootstrap-slider.min.js"></script>
+    <link href="iTunesPreviewPlayer.css" rel="stylesheet" type="text/css" />
+    <script src="iTunesPreviewPlayer.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+    <script src="songs.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="container">
+        <div class="left-songs">
+        </div>
+        <div class="center-col">
+            <div id="intro">
+                <h2>We analyzed the top 100 songs as chosen by the Rolling Stone magazine. <br>Here is how you make it to their list of top songs.</h2>
+            </div>
+            <div class="categories">
+                <div class="year">
+                    <h3 class="year category">Year</h3>
+                    <div id="time-slider-container">
+                        <input id="time-slider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" />
+                    </div>
+                </div>
+                <br>
+                <div class="sex">
+                    <h3 class="sex category">Sex</h3>
+                    <p class="Male">Male</p>
+                </div>
+                <br>
+                <div class="length">
+                    <h3 class="length category">Length</h3>
+                    <div id="length-slider-container">
+                        <input id="length-slider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="12" data-slider-step="1" />
+                    </div>
+                </div>
+                <br>
+                <div class="genre">
+                    <h3 class="genre category">Genre</h3>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-button">
+                            <span class="dropdown-text">Rock</span>
+                            <i class="fa fa-caret-square-o-down"></i>
+                        </div>
+                        <div class="dropdown-box">
+                            <p>Soul</p>
+                            <p>Folk</p>
+                            <p>RnB</p>
+                            <p>Country</p>
+                            <p>Reggae</p>
+                            <p>Hip-Hop</p>
+                            <p>Funk</p>
+                            <p>Doo-wop</p>
+                            <p>Pop</p>
+                            <p>Jazz</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="label">
+                    <h3 class="category">Label</h3>
+                    <p class="Columbia">Columbia</p>
+                </div>
+                <br>
+                <div class="country">
+                    <h3 class="country category">Country</h3>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-button">
+                            <span class="dropdown-text">United States</span>
+                            <i class="fa fa-caret-square-o-down"></i>
+                        </div>
+                        <div class="dropdown-box">
+                            <p>United Kingdom</p>
+                            <p>Ireland</p>
+                            <p>Jamaica</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="month">
+                    <h3 class="month category">Month</h3>
+                    <div id="month-slider-container">
+                        <input id="month-slider" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="12" data-slider-step="1" data-slider-value="14" />
+                    </div>
+                </div>
+                <br>
+                <div class="reset">
+                    <br>
+                    <a href="#" class="reset-button" onclick="reset()">Reset to Most Common</a>
+                </div>
+                <br>
+            </div>
+            <div class="reset">
+                <br>
+                <a class="multiselect-btn">Multiselect</a>
+                <i class="multi-info-btn fa fa-lg fa-question-circle">
+                    
+                    <div class="multi-info-box">
+                        <p>To select multiple categories click the category label so that it turns blue. Set the values as you wish and then click the multiselect button!</p>
+                    </div>
+                </i>                
+            </div><br><br>
+		    <div class="footer">
+		        <h2 id="questionBtn">Questions?</h2>
+		        <div id="questionBox">
+		            <h4><a href='http://rollingstone.com/music/lists/the-500-greatest-songs-of-all-time-20110407'>Click for Rolling Stone's Top 500</a></h4>
+		            <h4>Authored By: Sam Broner & Rachel Frenkel</h4>
+		            <div class="question-description">
+		            	<p>This visualization will help you find out more about Rolling Stones Top 100 Songs. Feel free to click on the songs themselves to find out more about them, fiddle with the categories to highlight your favorite songs, or click the play button next to the titles to play a clip from the song.</p>
+
+						<p>We constructed this query system in response to the work we did for the coordinated multi-view. Our difficulty with selection, highlighting, and multi-selection led us to explore the topic more deeply.</p>
+		            </div>
+		        </div>		        
+		    </div>     
+        </div>
+        <div class="right-songs">
+        </div>
+    </div>
+    <br>
+    <br>
+
+</body>
+
+</html>

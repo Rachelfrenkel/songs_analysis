@@ -1,0 +1,149 @@
+body {
+    background: url(./background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+}
+
+.clicked-category {
+    color: blue;
+/*    font-size: 35px;
+*/}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.center-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.question-description {
+    border: 1px solid;
+    font-size: 18px;
+    width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.description-box {
+    border: 1px solid;
+}
+
+#intro {}
+
+.categories {}
+
+.category {
+    font-weight: bold;
+}
+
+.right-songs {}
+
+.left-songs {}
+
+.hover {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    /*font-size: 20px;*/
+}
+
+#questionBox {
+    display: none;
+}
+
+#questionBtn:hover {
+    cursor: pointer;
+}
+
+.dropdown-button {
+    /*border: 2px solid black;*/
+    /*padding: 16px 20px;*/
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown-box {
+    display: none;
+    border: 2px solid black;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+}
+
+.dropdown-box p:hover {
+    cursor: pointer;
+}
+
+.sex p:hover {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    background: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.multiselect-btn {
+    border: 2px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    /*font-family:Arial;*/
+    font-size: 15px;
+    padding: 16px 31px;
+    text-decoration: none;
+}
+
+
+.multi-info-btn {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.multi-info-box {
+    display: none;
+    border: 2px solid black;
+    max-width: 300px;
+    position: absolute;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 20px;
+}
+
+
+.multiselect-clicked {
+	opacity :.6;
+    background-color: white;
+}
+
+.reset-button {
+    border: 2px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    /*font-family:Arial;*/
+    font-size: 15px;
+    padding: 16px 31px;
+    text-decoration: none;
+}
+
+.reset-button:active {
+    position: relative;
+    top: 1px;
+}
