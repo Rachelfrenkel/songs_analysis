@@ -3,6 +3,7 @@ body {
     background-size: cover;
     font-family: 'Karla', sans-serif;
     font-weight: 700;
+    zoom: 50%;
 }
 
 .clicked-category {
@@ -36,17 +37,18 @@ body {
     margin-right: auto;    
 }
 
-#intro {}
-
-.categories {}
 
 .category {
     font-weight: bold;
 }
 
-.right-songs {}
+.left-songs {
+    background: rgba(226,217,84,0.3);
+}
 
-.left-songs {}
+.right-songs {
+    background: rgba(230, 230, 230,0.3);
+}
 
 .hover {
     color: white;
